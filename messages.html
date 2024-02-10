@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messagerie - Lycée</title>
+</head>
+<body>
+  <header>
+    <h1>Messagerie</h1>
+    <p>Échangez des messages avec d'autres membres.</p>
+  </header>
+  <!-- Formulaire pour envoyer des messages -->
+  <form id="messageForm">
+    <label for="recipient">Destinataire :</label>
+    <input type="text" id="recipient" required>
+    <label for="message">Message :</label>
+    <textarea id="message" required></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+  <!-- Zone pour afficher les messages -->
+  <section id="messages"></section>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="messages.js"></script>
+</body>
+</html>
