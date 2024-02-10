@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <title>Partage de Photos - Lycée</title>
 </head>
 <body>
-  <header>
-    <h1>Partage de Photos</h1>
-    <p>Tout le monde peut partager des photos ici.</p>
-  </header>
+  <!-- Inclure le header commun -->
+  <include src="header.html"></include>
+
   <!-- Formulaire pour téléverser des photos -->
   <form id="uploadForm" enctype="multipart/form-data">
     <input type="file" accept="image/*" id="photoInput" required>
