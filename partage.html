@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partage de Photos - Lycée</title>
+</head>
+<body>
+  <header>
+    <h1>Partage de Photos</h1>
+    <p>Tout le monde peut partager des photos ici.</p>
+  </header>
+  <!-- Formulaire pour téléverser des photos -->
+  <form id="uploadForm" enctype="multipart/form-data">
+    <input type="file" accept="image/*" id="photoInput" required>
+    <button type="submit">Envoyer</button>
+  </form>
+  <!-- Zone pour afficher les photos partagées -->
+  <section id="photos"></section>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="partage.js"></script>
+</body>
+</html>
